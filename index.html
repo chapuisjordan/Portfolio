@@ -35,12 +35,11 @@
     <section class="about-me">
 
 
-      <div class="arrow-hide">
-      </div>
+      <div data-state="arrowHide" class="arrowMoi" >
 
-      <div>
-        <h3 class="title-section">À propos de moi...</h3>
-        <div class="description-et-photo">
+        <div class='arrow-hide-moi' ><h3 class="title-section-moi">À propos de moi...</h3></div>
+
+        <div data-state="descriptionPhoto" class="description-et-photo">
           <div class="photo-de-moi">
             <img class="arrondi" src="image/photomoi.jpg" width="200px">
           </div>
@@ -53,122 +52,122 @@
             l'expérience et de travailler dans un milieu professionel, mon
             but ultime est de trouver une entreprise qui est prête à me prendre en alternance
             durant ma prochaine formation qui durera 2 ans.</p>
-
           </div>
-      </div>
+        </div>
+    </section>
 
 
-
-
-      </section>
-
-      <div class="little-barre-separation">
-      </div>
 
       <!--PHOTOPROJET1-->
       <!--
       <div class="photo-espace-une">
-      </div>
-      -->
+    </div>
+  -->
 
-      <!--MES PROJETS-->
-      <section class="my-projects">
-        <h3 class="title-section-projets">Mes Projets</h3>
-        <div class="container-projets">
-          <figure class="projet">
-            <h2 class="title-projets">Projet 1</h2>
-              <a href="#"><img src="./image/bootstrap.png" height="200px"></a>
-              <hr class="under-photo">
-            <figcaption>
-              <p>Petit site type Portofolio créé à l'aide de Bootstrap.</p>
-            </figcaption>
-          </figure>
+  <!--MES PROJETS-->
 
-          <figure class="projet">
-            <h2>Projet 2</h2>
-            <a href="#"><img src="./image/jsgame2.png" height="200px"></a>
-            <hr class="under-photo">
-            <figcaption>
-              <p>Mini-jeu réalisé à l'aide de JavaScript.<br>Le but est de déplacer un personnage jusqu'à un <br> objet, un ennemi se déplace aléatoirement à chacun <br>de nos déplacements.</p>
+  <section data-state="arrowHide" class="arrowProjets my-projects">
 
-            </figcaption>
-          </figure>
-          <figure class="projet">
-            <h2>Projet 3</h2>
-            <a href="#"><img src="./image/quizztwd.png" height="200px"></a>
-            <hr class="under-photo">
-            <figcaption>
-              <p>Simple questionnaire rédigé en PHP.</p>
-            </figcaption>
-          </figure>
+    <div class='arrow-hide-projets'><h3 class="title-section-projets">Mes Projets</h3></div>
+    <div class="container-projets" data-state="mesProjets">
+      <figure class="projet">
+        <h2 class="title-projets">Projet 1</h2>
+        <a href="#"><img src="./image/bootstrap.png" height="200px"></a>
+        <hr class="under-photo">
+        <figcaption>
+          <p>Petit site type Portofolio créé à l'aide de Bootstrap.</p>
+        </figcaption>
+      </figure>
 
-        </div>
+      <figure class="projet">
+        <h2>Projet 2</h2>
+        <a href="#"><img class="photo-deux" src="./image/jsgame2.png" height="200px"></a>
+        <hr class="under-photo">
+        <figcaption>
+          <p>Mini-jeu réalisé à l'aide de JavaScript.<br>Le but est de déplacer un personnage jusqu'à un <br> objet, un ennemi se déplace aléatoirement à chacun <br>de nos déplacements.</p>
 
-      </section>
-
-      <div class="little-barre-separation">
-      </div>
-      <!--
-      <div class="photo-espace-deux">
-      </div>
-    -->
-      <!--MES COMPETENCES -->
-      <section class="mes-competences">
-        <h3 class="title-section">Mes Compétences</h3>
-        <div class="competence-valide">
-          <div class="competence">
-            <i class="fa fa-check" aria-hidden="true">Html</i>
-          </div>
-          <div class="competence">
-            <i class="fa fa-check" aria-hidden="true">Css</i>
-          </div>
-          <div class="competence">
-            <i class="fa fa-check" aria-hidden="true">Bootstrap</i>
-          </div>
-          <div class="competence">
-            <i class="fa fa-check" aria-hidden="true">Javascript</i>
-          </div>
-          <div class="competence">
-            <i class="fa fa-check" aria-hidden="true">Mysql</i>
-          </div>
-          <div class="competence">
-            <i class="fa fa-check" aria-hidden="true">Php</i>
-          </div>
-
-        </div>
-        <hr class="separation-competences">
-        <div class="os">
-          <i class="fa fa-windows fa-4x" aria-hidden="true"></i>
-          <i class="fa fa-apple fa-4x" aria-hidden="true"></i>
-          <i class="fa fa-linux fa-4x" aria-hidden="true"></i>
-        </div>
-      </section>
-      <div class="barre-separation">
-      </div>
-    </main>
-    <footer>
-      <div class="bas-de-page">
-        <h2 class="contactez-moi">Contactez-moi !</h2>
-        <hr class="barre-contactez-moi">
-        <p class="text-footer">Vous êtes susceptible de me prendre en alternance ? <br>Vous voulez me tester pendant une semaine ? <br>Je suis disponible de Décembre à Mars, n'hésitez pas à me contacter.</p>
-      </div>
-      <div class="barre-icone">
-        <div class="container-icone">
-        <a href="https://github.com/chapuisjordan"><i class="icone fa fa-github fa-4x" aria-hidden="true" href=""></i></a>
-        <a href="https://outlook.live.com/owa/"><i class="icone fa fa-envelope-o fa-4x" aria-hidden="true"></i></a>
-        <a href="https://www.linkedin.com/in/jordan-c-7a187a99/"><i class="icone fa fa-linkedin-square fa-4x" aria-hidden="true"></i></a>
-      </div>
-      </div>
-      <div class="copyright">
-        <p class="copyright-texte">Jordan Chapuis Copyright 2017 <i class="fa fa-copyright" aria-hidden="true"></i></p>
-      </div>
-    </footer>
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+        </figcaption>
+      </figure>
+      <figure class="projet">
+        <h2>Projet 3</h2>
+        <a href="#"><img src="./image/quizztwd.png" height="200px"></a>
+        <hr class="under-photo">
+        <figcaption>
+          <p>Simple questionnaire rédigé en PHP.</p>
+        </figcaption>
+      </figure>
 
 
-  </body>
+  </div>
 
-  </html>
+  </section>
+  <!--
+  <div class="photo-espace-deux">
+  </div>
+  -->
+<!--MES COMPETENCES -->
+<section class="arrowCompetences mes-competences">
+
+  <div class='arrow-hide-competences'><h3 class="title-section-competences">Mes Compétences</h3></div>
+  <div  data-state="mesCompetences">
+
+  <div class="competence-valide">
+    <div class="competence">
+      <i style="color:green"class="fa fa-check" aria-hidden="true"><a style="color:black;">Html</a></i>
+    </div>
+    <div class="competence">
+      <i style="color:green"class="fa fa-check" aria-hidden="true"><a style="color:black;">CSS</a></i>
+    </div>
+    <div class="competence">
+      <i style="color:green"class="fa fa-check" aria-hidden="true"><a style="color:black;">Bootstrap</a></i>
+    </div>
+    <div class="competence">
+      <i style="color:green"class="fa fa-check" aria-hidden="true"><a style="color:black;">Javascript</a></i>
+    </div>
+    <div class="competence">
+      <i style="color:green"class="fa fa-check" aria-hidden="true"><a style="color:black;">Mysql</a></i>
+    </div>
+    <div class="competence">
+      <i style="color:green"class="fa fa-check" aria-hidden="true"><a style="color:black;">Php</a></i>
+    </div>
+
+  </div>
+  <hr class="separation-competences">
+  <div class="os">
+    <i class="fa fa-windows fa-4x" aria-hidden="true"></i>
+    <i class="fa fa-apple fa-4x" aria-hidden="true"></i>
+    <i class="fa fa-linux fa-4x" aria-hidden="true"></i>
+  </div>
+</div>
+</section>
+
+
+<div class="barre-separation">
+</div>
+</main>
+<footer>
+  <div class="bas-de-page">
+    <h2 class="contactez-moi">Contactez-moi !</h2>
+    <hr class="barre-contactez-moi">
+    <p class="text-footer">Vous êtes susceptible de me prendre en alternance ? <br> N'hésitez pas à me contacter.</p>
+  </div>
+  <div class="barre-icone">
+    <div class="container-icone">
+      <a href="https://github.com/chapuisjordan"><i class="icone fa fa-github fa-4x" aria-hidden="true" href=""></i></a>
+      <a href="https://outlook.live.com/owa/"><i class="icone fa fa-envelope-o fa-4x" aria-hidden="true"></i></a>
+      <a href="https://www.linkedin.com/in/jordan-c-7a187a99/"><i class="icone fa fa-linkedin-square fa-4x" aria-hidden="true"></i></a>
+    </div>
+  </div>
+  <div class="copyright">
+    <p class="copyright-texte">Jordan Chapuis Copyright 2017 <i class="fa fa-copyright" aria-hidden="true"></i></p>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script type="text/javascript" src="./js/script.js"></script>
+
+
+</body>
+
+</html>
