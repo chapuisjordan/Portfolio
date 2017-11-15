@@ -5,7 +5,7 @@ $(document).ready(function(){
     var winHeight = $(window).height();
     var scrollPercent =(docHeight - winHeight);
 
-    //Partie à propos de moi.
+/*    //Partie à propos de moi.
     if (heightScroll > scrollPercent * 0.18){
       $('.arrow-hide-moi').css('transform', 'translateX(-100%)');
       $('.arrow-hide-moi').css('transition', '1.5s');
@@ -13,6 +13,7 @@ $(document).ready(function(){
     if (heightScroll > scrollPercent * 0.5|| heightScroll < scrollPercent * 0.15){
       $('.arrow-hide-moi').css('transform', 'translateX(0%)');
     }
+*/
 
     //Partie mes projets.
     if (heightScroll > scrollPercent * 0.5){
