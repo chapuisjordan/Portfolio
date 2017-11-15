@@ -6,7 +6,7 @@ $(document).ready(function(){
     var scrollPercent =(docHeight - winHeight);
 
     //Partie à propos de moi.
-    if (heightScroll > scrollPercent * 0.2){
+    if (heightScroll > scrollPercent * 0.18){
       $('.arrow-hide-moi').css('transform', 'translateX(-100%)');
       $('.arrow-hide-moi').css('transition', '1.5s');
     }
@@ -28,9 +28,8 @@ $(document).ready(function(){
       $('.arrow-hide-competences').css('transform','translateX(-100%)');
       $('.arrow-hide-competences').css('transition','1.5s');
     }
-    if (heightScroll < scrollPercent * 0.75 || heightScroll > scrollPercent * 0.95){
+    if (heightScroll < scrollPercent * 0.75 || heightScroll > scrollPercent * 0.99){
       $('.arrow-hide-competences').css('transform','translateX(0%)');
     }
-
   });
 });
