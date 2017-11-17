@@ -80,15 +80,14 @@ main{
 
 /*******COMMUNAUXSECTIONS*******/
 .title-section-moi{
-  text-align: center;
   font-size: 70px;
-  margin:20px 350px;
+  margin:20px 0 0 10%;
   color: white;
-  text-decoration: underline;
   padding-top: 15px;
   font-weight: 500;
-  text-shadow: 1px 1px 1px black;
-  position: absolute;
+}
+.more-margin{
+  margin:20px 0 0 40%;
 }
 
 .title-section-competences{
@@ -338,14 +337,14 @@ max-height: 60px;
 .arrowMoi{
   position: relative;
 }
-.arrow-hide-projets-left{
+.arrow-left-projets, .arrow-left-moi {
   background-color: black;
   width: 50%;
   height: 100%;
   position: absolute;
   z-index: 1;
 }
-.arrow-hide-projets-right{
+.arrow-right-projets, .arrow-right-moi{
   margin-left: 50%;
   background-color: black;
   width: 50%;
