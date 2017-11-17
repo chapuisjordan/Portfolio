@@ -113,7 +113,7 @@ main{
   font-size: 16px;
   padding: 30px;
   background-color:white;
-  border: 0.5px solid lightgrey;
+
 }
 .description-moi:hover{
   background-color: black;
@@ -143,7 +143,7 @@ display: flex;
 align-items: center;
 }
 .arrondi{
-  border-radius: 25px;
+  border-radius: 5px;
 }
 
 /***********MESPROJETS************/
@@ -160,7 +160,7 @@ align-items: center;
 }
 .projet{
   opacity:0.8;
-  height: 400px;
+  min-height: 400px;
 }
 .container-projets img{
   display: block;
@@ -256,7 +256,7 @@ max-height: 60px;
   width: 100%;
   margin-top: 15px;
   max-height: 700px;
-  background-color:#6728B3;
+  background-color:#33393D;
 }
 .contactez-moi{
   margin: 0;
@@ -273,7 +273,7 @@ max-height: 60px;
 
 }
 .barre-icone{
-  background-color: #526173;
+  background-color: #202528;
   display: flex;
   justify-content: center;
 }
@@ -285,7 +285,7 @@ max-height: 60px;
   width: 150px;
 }
 .copyright{
-  background-color:#1d262f;
+  background-color:#000000;
   height: 50px;
 }
 .copyright-texte{
@@ -313,6 +313,7 @@ max-height: 60px;
   padding:0 10px 0 10px;
 }
 /***********ARROW***************/
+
 .arrow-hide-moi{
   width: 100%;
   height: 100%;
@@ -347,6 +348,7 @@ max-height: 60px;
   z-index: 1;
 }
 .arrow-right-projets, .arrow-right-moi, .arrow-right-competences{
+  right:0px;
   margin-left: 50%;
   background-color: black;
   width: 50%;
@@ -381,6 +383,7 @@ max-height: 60px;
     justify-content: center;
   }
 
+
 }
 @media screen and (max-width:1315px){
   .photo-de-moi{
@@ -398,11 +401,21 @@ max-height: 60px;
   }
 }
 @media screen and (max-width:480px){
-  .title-section-competences{
-    font-size: 50px;
+  .title-section-competences, .title-section-moi, .title-section-projets{
+    font-size: 40px;
   }
-  .photo-deux{
-    width : 380px;
+  .title-projets{
+    width: 350px !important ;
+  }
+  .photo-resize{
+    width : 350px;
+    margin: 0 auto;
+  }
+  figcaption{
+    padding-left: 10px ;
+  }
+  .under-photo{
+    margin-left: 10px;
   }
 }
 @media screen and (max-width:1290px){
