@@ -23,8 +23,19 @@ barreAppear();
 qualificationAppear();
 
 
-
-
+function rotateArrow(){
+  setInterval(up, 1000);
+  setInterval(down, 1000);
+}
+function up(){
+  $('.arrow').css('transition', '0.2s');
+  $('.arrow').css('margin-bottom', '10px');
+}
+function down(){
+  $('.arrow').css('transition', '0.2s');
+  $('.arrow').css('margin-bottom', '0px');
+}
+rotateArrow();
 
 
   $(window).on('scroll', function(){
