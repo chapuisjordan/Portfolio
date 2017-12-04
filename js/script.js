@@ -23,8 +23,19 @@ barreAppear();
 qualificationAppear();
 
 
-
-
+function rotateArrow(){
+  setInterval(up, 1000);
+  setInterval(down, 1000);
+}
+function up(){
+  $('.arrow').css('transition', '0.2s');
+  $('.arrow').css('margin-bottom', '10px');
+}
+function down(){
+  $('.arrow').css('transition', '0.2s');
+  $('.arrow').css('margin-bottom', '0px');
+}
+rotateArrow();
 
 
   $(window).on('scroll', function(){
@@ -33,48 +44,53 @@ qualificationAppear();
     var winHeight = $(window).height();
     var scrollPercent =(docHeight - winHeight);
 
+
     //Partie à propos de moi.
    if (heightScroll > scrollPercent * 0.18){
-      $('.arrow-left-moi').css('transform', 'translateX(-100%)');
+
+      $('.arrow-left-moi').css('width', '0px');
       $('.arrow-left-moi').css('transition', '1.5s');
-      $('.arrow-right-moi').css('transform', 'translateX(100%)');
+      $('.arrow-right-moi').css('width', '0px');
       $('.arrow-right-moi').css('transition', '1.5s');
       $('.title-section-moi').css('opacity', '1');
       $('.title-section-moi').css('transition', '2s');
+
     }
     if (heightScroll > scrollPercent * 0.5|| heightScroll < scrollPercent * 0.15){
-      $('.arrow-left-moi').css('transform', 'translateX(0%)');
-      $('.arrow-right-moi').css('transform', 'translateX(0%)');
+      $('.arrow-left-moi').css('width', '50%');
+      $('.arrow-right-moi').css('width', '50%');
       $('.title-section-moi').css('opacity', '0');
+
     }
+
 
     //Partie mes projets.
     if (heightScroll > scrollPercent * 0.5){
-      $('.arrow-left-projets').css('transform', 'translateX(-100%)');
+      $('.arrow-left-projets').css('width', '0px');
       $('.arrow-left-projets').css('transition', '1.5s');
-      $('.arrow-right-projets').css('transform', 'translateX(100%)');
+      $('.arrow-right-projets').css('width', '0px');
       $('.arrow-right-projets').css('transition', '1.5s');
       $('.title-section-projets').css('opacity', '1');
 
     }
-    if (heightScroll > scrollPercent * 0.75 || heightScroll < scrollPercent * 0.5){
-      $('.arrow-left-projets').css('transform', 'translateX(0%)');
-      $('.arrow-right-projets').css('transform', 'translateX(0%)');
+    if (heightScroll > scrollPercent * 0.77 || heightScroll < scrollPercent * 0.5){
+      $('.arrow-left-projets').css('width', '50%');
+      $('.arrow-right-projets').css('width', '50%');
       $('.title-section-projets').css('opacity', '0');
       $('.title-section-projets').css('transition', '2s');
     }
 
     //Partie mes compétences.
     if (heightScroll > scrollPercent * 0.80){
-      $('.arrow-left-competences').css('transform', 'translateX(-100%)');
+      $('.arrow-left-competences').css('width', '0px');
       $('.arrow-left-competences').css('transition', '1.5s');
-      $('.arrow-right-competences').css('transform', 'translateX(100%)');
+      $('.arrow-right-competences').css('width', '0px');
       $('.arrow-right-competences').css('transition', '1.5s');
       $('.title-section-competences').css('opacity', '1');
     }
-    if (heightScroll < scrollPercent * 0.75 || heightScroll > scrollPercent * 0.999){
-      $('.arrow-left-competences').css('transform', 'translateX(0%)');
-      $('.arrow-right-competences').css('transform', 'translateX(0%)');
+    if (heightScroll < scrollPercent * 0.77 || heightScroll > scrollPercent * 0.999){
+      $('.arrow-left-competences').css('width', '50%');
+      $('.arrow-right-competences').css('width', '50%');
       $('.title-section-competences').css('opacity', '0');
       $('.title-section-competences').css('transition', '2s');
     }
