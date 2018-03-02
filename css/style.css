@@ -24,7 +24,9 @@
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
+.arrow{
 
+}
 header{
   font-family: 'Manuale', serif;
 }
@@ -55,7 +57,6 @@ main{
     width: 70px;
     height: 2px;
     opacity: 0;
-
     align-items: center;
     background-color: black;
     display: block;
@@ -82,10 +83,16 @@ main{
 
 
 /*******COMMUNAUXSECTIONS*******/
-.title-section-moi, .title-section-competences, .title-section-projets{
+.title-section-moi, .title-section-competences, .title-section-atouts{
   text-align: center;
   font-size: 70px;
   margin:30px;
+  padding-top: 15px;
+}
+.title-section-projets{
+  text-align: center;
+  font-size: 70px;
+  margin-left: 55px;
   padding-top: 15px;
 }
 .name{
@@ -105,15 +112,19 @@ main{
   align-items: center;
   flex-wrap: wrap;
 }
-
+.strong{
+  font-size: 18px;
+  color: red;
+}
 .description-moi{
   background-color: white;
   margin-right: 10px;
   max-width: 70%;
-  font-size: 16px;
+  font-size: 17px;
   padding: 30px;
   background-color:white;
-  border: 0.5px solid lightgrey;
+  line-height: 30px;
+  font-family: 'Lato', sans-serif;
 }
 .description-moi:hover{
   background-color: black;
@@ -143,7 +154,7 @@ display: flex;
 align-items: center;
 }
 .arrondi{
-  border-radius: 25px;
+  border-radius: 5px;
 }
 
 /***********MESPROJETS************/
@@ -160,7 +171,7 @@ align-items: center;
 }
 .projet{
   opacity:0.8;
-  height: 400px;
+  min-height: 400px;
 }
 .container-projets img{
   display: block;
@@ -250,13 +261,38 @@ max-height: 60px;
   width:80%;
   margin: 60px auto;
 }
+/**************MESATOUTS***********/
+.mes-atouts{
+  width: 80%;
+  min-height: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  font-size: 19px;
+}
+.atouts{
+  width: 100%;
+}
+.atout1, .atout2, .atout3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.atout1 a{
+  padding: 30px;
+  border: 1px solid black;
+}
+.atout2 a, .atout3 a{
+  padding: 30px;
+}
 
 /**************FOOTER************/
 .bas-de-page{
   width: 100%;
   margin-top: 15px;
   max-height: 700px;
-  background-color:#6728B3;
+  background-color:#A2AFC5;
 }
 .contactez-moi{
   margin: 0;
@@ -273,7 +309,7 @@ max-height: 60px;
 
 }
 .barre-icone{
-  background-color: #526173;
+  background-color: #8D99AE;
   display: flex;
   justify-content: center;
 }
@@ -285,7 +321,7 @@ max-height: 60px;
   width: 150px;
 }
 .copyright{
-  background-color:#1d262f;
+  background-color:#2B2D42;
   height: 50px;
 }
 .copyright-texte{
@@ -313,6 +349,7 @@ max-height: 60px;
   padding:0 10px 0 10px;
 }
 /***********ARROW***************/
+
 .arrow-hide-moi{
   width: 100%;
   height: 100%;
@@ -320,33 +357,21 @@ max-height: 60px;
   display: flex;
   justify-content: flex-start;
 }
-.rectangle{
-  padding: 0;
-  width: 90%;
-  height: 100%;
-  background-color: black;
-}
-.triangle{
-  width: 0%;
-  max-height: 100%;
-  border:175px solid transparent;
-  border-right: 10px solid transparent;
-  border-left:170px solid black;
-}
+
 .arrowMoi{
   position: relative;
-
 }
 
 
-.arrow-left-projets, .arrow-left-moi ,.arrow-left-competences{
+.arrow-left-projets, .arrow-left-moi ,.arrow-left-competences, .arrow-left-atouts{
   background-color: black;
   width: 50%;
   height: 100%;
   position: absolute;
   z-index: 1;
 }
-.arrow-right-projets, .arrow-right-moi, .arrow-right-competences{
+.arrow-right-projets, .arrow-right-moi, .arrow-right-competences, .arrow-right-atouts{
+  right:0px;
   margin-left: 50%;
   background-color: black;
   width: 50%;
@@ -366,7 +391,7 @@ max-height: 60px;
   position: relative;
 }
 
-.arrowProjets{
+.arrowProjets, .arrowAtouts{
   width: 100%;
   position: relative;
 }
@@ -380,6 +405,7 @@ max-height: 60px;
     display: flex;
     justify-content: center;
   }
+
 
 }
 @media screen and (max-width:1315px){
@@ -398,11 +424,21 @@ max-height: 60px;
   }
 }
 @media screen and (max-width:480px){
-  .title-section-competences{
-    font-size: 50px;
+  .title-section-competences, .title-section-moi, .title-section-projets{
+    font-size: 40px;
   }
-  .photo-deux{
-    width : 380px;
+  .title-projets{
+    width: 350px !important ;
+  }
+  .photo-resize{
+    width : 350px;
+    margin: 0 auto;
+  }
+  figcaption{
+    padding-left: 10px ;
+  }
+  .under-photo{
+    margin-left: 10px;
   }
 }
 @media screen and (max-width:1290px){
