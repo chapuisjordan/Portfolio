@@ -31,21 +31,14 @@ function equipeAtoutSolidInterval(){
 
 ///////////////////////TESTS/////////////////////////
 
-function rigoureuxAtoutTop(){
-  $('.atout2 a').css('transition', '10s');
-  $('.atout2 a').css('border-top', '1px solid rgba(0, 0, 0, .0)');
-}
- function rigoureuxAtoutTopTimer(){
-   setTimeout(rigoureuxAtoutTop, 2000);
- }
+
 
 /////////////////////////////////////////////////////
 
 $(document).ready(function(){
+  //Rigoureux
 
-rigoureuxAtoutTopTimer();
-
-
+  //
 
   //Dynamique
 dynamiqueAtoutTurn();

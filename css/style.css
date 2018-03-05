@@ -286,7 +286,18 @@ max-height: 60px;
 .atout2 a, .atout3 a{
   padding: 30px;
 }
+.border-top{
 
+}
+.border-right{
+
+}
+.border-bottom{
+
+}
+.border-left{
+  
+}
 /**************FOOTER************/
 .bas-de-page{
   width: 100%;
